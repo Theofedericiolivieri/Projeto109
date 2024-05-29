@@ -8,8 +8,8 @@ cap = cv2.VideoCapture(0)
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 (screen_width, screen_height) = pyautogui.size()
-mp_hands = mp_solutions.hands
-mp_drawing = mp_solutions.drawing_utils
+mp_hands = mp.solutions.hands
+mp_drawing = mp.solutions.drawing_utils
 hands = mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5)
 tipIds = [4, 8, 12, 16, 20]
 pinch=False
